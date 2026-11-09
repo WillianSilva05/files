@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja Beleza a Mais - produtos de cuidados pessoais e bem-estar.">
+    <title>Beleza a Mais - Início</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg">
+    
+    <!-- Bootstrap para os controles do carrossel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilos da página -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho e navegação principal -->
+    <header>
+        <div class="container-custom header-content">
+            <div class="brand-wrapper">
+                <img src="imagens/logo.svg" alt="Logotipo Beleza a Mais" class="brand-logo">
+                <h1 class="brand-name">Beleza a Mais</h1>
+            </div>
+
+            <nav>
+                <a href="index.html" class="active">Início</a>
+                <span class="nav-separator">|</span>
+                <a href="produtos.html">Produtos</a>
+                <span class="nav-separator">|</span>
+                <a href="contato.html">Contato</a>
+            <span class="nav-separator">|</span>
+                <a href="produtos.html" id="contador-carrinho" class="nav-carrinho" aria-label="Itens no carrinho">🛒 0</a>
+                <button id="btn-tema" type="button" aria-label="Alternar entre tema claro e escuro">🌙 Escuro</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Apresentação da loja -->
+    <div class="hero-banner">
+        <div class="container-custom">
+            <h2>O seu momento diário de autocuidado</h2>
+            <p>Fórmulas delicadas, ingredientes vegetais e produtos pensados para renovar a sua autoestima com conforto e suavidade.</p>
+            <a href="produtos.html" class="btn-buy">Explorar Catálogo Completo</a>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container-custom">
+
+        <!-- Carrossel de produtos -->
+        <section class="carousel-section">
+            <div class="section-wrapper">
+                <h2>Destaques da Coleção</h2>
+            </div>
+
+            <!-- Estrutura e controles do carrossel -->
+            <div id="carrosselProdutos" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores dos slides -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrosselProdutos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carrosselProdutos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carrosselProdutos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Slides de produtos -->
+                <div class="carousel-inner">
+                    <!-- Slide do sérum facial -->
+                    <div class="carousel-item active" data-bs-interval="4500">
+                        <div class="carousel-slide-content">
+                            <img src="imagens/serum-facial.png" alt="Sérum Facial Dourado" class="carousel-slide-img">
+                            <div class="carousel-slide-text">
+                                <span class="tag-destaque">Mais Vendido</span>
+                                <h3>Sérum Facial Radiante</h3>
+                                <p>Sérum leve de rápida absorção, enriquecido com antioxidantes e ácido hialurônico para hidratar e iluminar a pele do rosto.</p>
+                                <span class="slide-preco">R$ 68,00</span>
+                                <a href="produtos.html" class="btn-buy">Ver no Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide do sabonete vegetal -->
+                    <div class="carousel-item" data-bs-interval="4500">
+                        <div class="carousel-slide-content">
+                            <img src="imagens/sabonete-vegetal.png" alt="Sabonete Vegetal Artesanal" class="carousel-slide-img">
+                            <div class="carousel-slide-text">
+                                <span class="tag-destaque">100% Artesanal</span>
+                                <h3>Sabonete Vegetal de Aveia & Lavanda</h3>
+                                <p>Elaborado com extratos botânicos calmantes, aveia e camomila para uma limpeza suave e aveludada no banho.</p>
+                                <span class="slide-preco">R$ 24,00</span>
+                                <a href="produtos.html" class="btn-buy">Ver no Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide do creme corporal -->
+                    <div class="carousel-item" data-bs-interval="4500">
+                        <div class="carousel-slide-content">
+                            <img src="imagens/creme-corporal.png" alt="Creme Corporal Nutritivo" class="carousel-slide-img">
+                            <div class="carousel-slide-text">
+                                <span class="tag-destaque">Hidratação Intensa</span>
+                                <h3>Creme Corporal Amêndoas & Karité</h3>
+                                <p>Toque suave com nutrição profunda para peles secas, deixando um aroma aconchegante e sensação de frescor o dia todo.</p>
+                                <span class="slide-preco">R$ 54,00</span>
+                                <a href="produtos.html" class="btn-buy">Ver no Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navegação entre slides -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselProdutos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselProdutos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Informações sobre a loja, missão e valores -->
+        <section class="about-section">
+            <div class="section-wrapper">
+                <h2>Sobre Nós</h2>
+            </div>
+
+            <p class="about-intro">
+                A Beleza a Mais é uma loja fictícia de produtos de cuidados pessoais.
+                Nossa história começou com o desejo de oferecer produtos que tornem a
+                rotina de autocuidado mais simples e agradável.
+            </p>
+
+            <div class="mission-values-grid">
+                <div class="card-info">
+                    <h3>Missão</h3>
+                    <p>
+                        Oferecer produtos de qualidade que contribuam para o bem-estar e a
+                        autoestima dos nossos clientes.
+                    </p>
+                </div>
+
+                <div class="card-info accent-sage">
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Respeito aos clientes;</li>
+                        <li>Qualidade nos produtos;</li>
+                        <li>Cuidado e bem-estar;</li>
+                        <li>Responsabilidade e confiança.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé e links para redes sociais -->
+    <footer>
+        <div class="container-custom footer-inner">
+            <div>
+                <h2>Contato</h2>
+                <p>E-mail: contato@belezaamais.com.br</p>
+                <p>Telefone: (11) 99999-9999</p>
+            </div>
+
+            <div>
+                <h2>Redes Sociais</h2>
+                <div class="footer-social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-custom footer-copyright">
+            <p>&copy; 2026 Beleza a Mais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script do Bootstrap para os controles do carrossel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

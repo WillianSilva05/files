@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <!-- Gradiente Rosé Gold Elegante -->
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e29b8f" />
+      <stop offset="50%" stop-color="#c87a6d" />
+      <stop offset="100%" stop-color="#9c4c3f" />
+    </linearGradient>
+
+    <!-- Gradiente Dourado Suave -->
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5dcbe" />
+      <stop offset="100%" stop-color="#c8965f" />
+    </linearGradient>
+  </defs>
+
+  <!-- Moldura Circular Fina -->
+  <circle cx="50" cy="50" r="45" fill="#fffaf7" stroke="url(#roseGold)" stroke-width="1.8"/>
+  <circle cx="50" cy="50" r="41.5" fill="none" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Letra 'B' Clássica e Inconfundível (Estilo Tipografia Serifada de Luxo) -->
+  <g fill="url(#roseGold)">
+    <!-- Haste Vertical Sólida e Reta (Garante que é claramente a letra B e nunca um 3) -->
+    <!-- Base e Topo com Serifas Clássicas -->
+    <path d="
+      M26 24 L44 24 L44 29 L38 29 L38 71 L46 71 L46 76 L26 76 L26 71 L32 71 L32 29 L26 29 Z
+    "/>
+
+    <!-- Curvatura Superior do 'B' -->
+    <path d="
+      M38 24 L52 24 C62 24 67 29 67 36 C67 43 61 48 50 48 L38 48 L38 43 L48 43 C55 43 60 40 60 36 C60 31 55 29 48 29 L38 29 Z
+    "/>
+
+    <!-- Curvatura Inferior do 'B' (Proporcionalmente mais aberta) -->
+    <path d="
+      M38 48 L53 48 C64 48 70 54 70 62 C70 70 63 76 50 76 L38 76 L38 71 L48 71 C57 71 62 67 62 62 C62 56 56 53 47 53 L38 53 Z
+    "/>
+  </g>
+
+  <!-- Raminho Botânico Dourado Delicado Decorativo -->
+  <g fill="url(#goldAccent)">
+    <!-- Folhinha no topo -->
+    <path d="M68 24 C74 20 78 22 80 28 C74 28 70 26 68 24 Z"/>
+    <!-- Folhinha ao lado -->
+    <path d="M72 31 C77 30 81 33 80 38 C75 36 73 33 72 31 Z"/>
+    <!-- Brilho Dourado -->
+    <circle cx="76" cy="22" r="1.5"/>
+  </g>
+</svg>

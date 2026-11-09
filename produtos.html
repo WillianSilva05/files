@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo completo de cosméticos botânicos e cuidados pessoais da Beleza a Mais.">
+    <title>Beleza a Mais - Produtos</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg">
+
+    <!-- Estilos da página -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho e navegação principal -->
+    <header>
+        <div class="container-custom header-content">
+            <div class="brand-wrapper">
+                <img src="imagens/logo.svg" alt="Logotipo Beleza a Mais" class="brand-logo">
+                <h1 class="brand-name">Beleza a Mais</h1>
+            </div>
+
+            <nav>
+                <a href="index.html">Início</a>
+                <span class="nav-separator">|</span>
+                <a href="produtos.html" class="active">Produtos</a>
+                <span class="nav-separator">|</span>
+                <a href="contato.html">Contato</a>
+            <span class="nav-separator">|</span>
+                <a href="produtos.html" id="contador-carrinho" class="nav-carrinho" aria-label="Itens no carrinho">🛒 0</a>
+                <button id="btn-tema" type="button" aria-label="Alternar entre tema claro e escuro">🌙 Escuro</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Apresentação da página de produtos -->
+    <div class="hero-banner">
+        <div class="container-custom">
+            <h2>Catálogo de Produtos</h2>
+            <p>Conheça nossa seleção de cosméticos botânicos e cuidados pessoais desenvolvidos com carinho para a sua pele.</p>
+        </div>
+    </div>
+
+    <!-- Lista de produtos -->
+    <main class="container-custom">
+        <section>
+            <div class="section-wrapper">
+                <h2>Lista de Produtos</h2>
+            </div>
+
+            <!-- Campo de busca e resumo do carrinho -->
+            <div class="loja-barra">
+                <div class="busca-produtos">
+                    <label for="busca-produto">Buscar produto:</label>
+                    <input type="search" id="busca-produto" placeholder="Digite o nome ou a categoria (ex.: sérum, corpo)">
+                </div>
+
+                <div class="carrinho-resumo" aria-live="polite">
+                    <span><strong id="carrinho-qtd">0</strong> item(ns)</span>
+                    <span>Total: <strong id="carrinho-total">R$ 0,00</strong></span>
+                    <button type="button" id="limpar-carrinho" class="btn-secundario">Esvaziar</button>
+                </div>
+            </div>
+
+            <p id="sem-resultados" class="sem-resultados" hidden>Nenhum produto encontrado para a sua busca.</p>
+
+            <div class="products-grid">
+                <!-- Cartão do sabonete vegetal -->
+                <article class="product-card" data-nome="Sabonete Vegetal" data-categoria="corpo banho higiene">
+                    <div class="product-image-wrap">
+                        <img
+                            src="imagens/sabonete-vegetal.png"
+                            alt="Sabonete vegetal artesanal com aveia e lavanda"
+                            width="300"
+                        >
+                    </div>
+                    <h3>Sabonete Vegetal</h3>
+                    <p>Sabonete artesanal com aveia e extratos botânicos, indicado para uma limpeza suave e calmante da pele.</p>
+                    <p class="product-price"><strong>Preço: R$ 24,00</strong></p>
+                    <button type="button" class="btn-buy" data-add-carrinho data-nome="Sabonete Vegetal" data-preco="24.00">Adicionar ao Carrinho</button>
+                </article>
+
+                <!-- Cartão do sérum facial -->
+                <article class="product-card" data-nome="Sérum Facial" data-categoria="rosto facial">
+                    <div class="product-image-wrap">
+                        <img
+                            src="imagens/serum-facial.png"
+                            alt="Sérum facial radiante em frasco conta-gotas"
+                            width="300"
+                        >
+                    </div>
+                    <h3>Sérum Facial</h3>
+                    <p>Sérum facial leve de rápida absorção que auxilia na hidratação, elasticidade e luminosidade natural do rosto.</p>
+                    <p class="product-price"><strong>Preço: R$ 68,00</strong></p>
+                    <button type="button" class="btn-buy" data-add-carrinho data-nome="Sérum Facial" data-preco="68.00">Adicionar ao Carrinho</button>
+                </article>
+
+                <!-- Cartão do creme corporal -->
+                <article class="product-card" data-nome="Creme Corporal" data-categoria="corpo hidratante">
+                    <div class="product-image-wrap">
+                        <img
+                            src="imagens/creme-corporal.png"
+                            alt="Creme hidratante corporal de amêndoas e karité"
+                            width="300"
+                        >
+                    </div>
+                    <h3>Creme Corporal</h3>
+                    <p>Creme corporal hidratante com manteiga de karité para manter a pele macia, nutrida e delicadamente perfumada.</p>
+                    <p class="product-price"><strong>Preço: R$ 54,00</strong></p>
+                    <button type="button" class="btn-buy" data-add-carrinho data-nome="Creme Corporal" data-preco="54.00">Adicionar ao Carrinho</button>
+                </article>
+
+                <!-- Cartão do óleo corporal -->
+                <article class="product-card" data-nome="Óleo Corporal" data-categoria="corpo óleo">
+                    <div class="product-image-wrap">
+                        <img
+                            src="imagens/oleo-corporal.png"
+                            alt="Óleo corporal dourado nutritivo em frasco de vidro"
+                            width="300"
+                        >
+                    </div>
+                    <h3>Óleo Corporal</h3>
+                    <p>Óleo nutritivo com toque aveludado para pós-banho, selando a hidratação e proporcionando brilho saudável.</p>
+                    <p class="product-price"><strong>Preço: R$ 59,00</strong></p>
+                    <button type="button" class="btn-buy" data-add-carrinho data-nome="Óleo Corporal" data-preco="59.00">Adicionar ao Carrinho</button>
+                </article>
+
+                <!-- Cartão do bálsamo labial -->
+                <article class="product-card" data-nome="Bálsamo Labial" data-categoria="lábios labial">
+                    <div class="product-image-wrap">
+                        <img
+                            src="imagens/balsamo-labial.png"
+                            alt="Bálsamo labial botânico em latinha com rosas e manteiga de cacau"
+                            width="300"
+                        >
+                    </div>
+                    <h3>Bálsamo Labial</h3>
+                    <p>Bálsamo natural formulado com manteiga de cacau e extrato de rosas para proteger e hidratar lábios ressecados.</p>
+                    <p class="product-price"><strong>Preço: R$ 22,00</strong></p>
+                    <button type="button" class="btn-buy" data-add-carrinho data-nome="Bálsamo Labial" data-preco="22.00">Adicionar ao Carrinho</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé e links para redes sociais -->
+    <footer>
+        <div class="container-custom footer-inner">
+            <div>
+                <h2>Contato</h2>
+                <p>E-mail: contato@belezaamais.com.br</p>
+                <p>Telefone: (11) 99999-9999</p>
+            </div>
+
+            <div>
+                <h2>Redes Sociais</h2>
+                <div class="footer-social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-custom footer-copyright">
+            <p>&copy; 2026 Beleza a Mais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

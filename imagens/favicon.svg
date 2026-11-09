@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favRoseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e29b8f" />
+      <stop offset="50%" stop-color="#c87a6d" />
+      <stop offset="100%" stop-color="#9c4c3f" />
+    </linearGradient>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5dcbe" />
+      <stop offset="100%" stop-color="#c8965f" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo Circular -->
+  <circle cx="32" cy="32" r="30" fill="#fffaf7" stroke="url(#favRoseGold)" stroke-width="2"/>
+
+  <!-- Letra 'B' Sólida e Definida -->
+  <g fill="url(#favRoseGold)">
+    <!-- Haste Vertical e Serifas -->
+    <path d="
+      M16 14 L28 14 L28 17 L24 17 L24 47 L29 47 L29 50 L16 50 L16 47 L20 47 L20 17 L16 17 Z
+    "/>
+
+    <!-- Curvatura Superior -->
+    <path d="
+      M24 14 L34 14 C41 14 44 17 44 22 C44 27 40 30 33 30 L24 30 L24 26 L31 26 C36 26 39 24 39 22 C39 19 36 17 31 17 L24 17 Z
+    "/>
+
+    <!-- Curvatura Inferior -->
+    <path d="
+      M24 30 L35 30 C43 30 47 34 47 41 C47 47 42 50 33 50 L24 50 L24 46 L32 46 C38 46 41 44 41 41 C41 36 37 34 31 34 L24 34 Z
+    "/>
+  </g>
+
+  <!-- Brilho Dourado Superior -->
+  <circle cx="48" cy="16" r="2.5" fill="url(#favGold)"/>
+</svg>
